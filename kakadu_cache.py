@@ -4,10 +4,11 @@ import random
 import json
 import threading
 import time
+import config
 
 cache = []
-api_key = '30900519-12d8729e070323d4fe8aaca74'
-api_url = 'https://pixabay.com/api/'
+api_key = config.API_TOKEN
+api_url = config.API_URL
 
 def get_cache():
     if cache:
